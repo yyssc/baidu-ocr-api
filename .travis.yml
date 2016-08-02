@@ -7,4 +7,4 @@ node_js:
 after_script:
   - make coveralls
 after_success:
-  - .utility/initiate-publish.sh
+  - .utility/push-jsdoc-to-gh-pages.sh
