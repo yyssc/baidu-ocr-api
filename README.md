@@ -1,4 +1,4 @@
-## [Baidu-OCR-API](https://bce.baidu.com/doc/OCR/ProductDescription.html#.E4.BB.8B.E7.BB.8D) For Nodejs
+## [TIMS-OCR-API](http://www.tchzt.com/) For Nodejs
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
@@ -32,7 +32,7 @@ ocr ./test.jpg
 
 
 
-![](https://raw.githubusercontent.com/netpi/baidu-ocr-api/master/examples/test01.jpg)
+![](https://raw.githubusercontent.com/yyssc/tims-ocr-api/master/examples/test01.jpg)
 
 
 
@@ -45,14 +45,12 @@ ocr ./test.jpg
 npm install tims-ocr-api --save
 ```
 
-FYI [examples](https://github.com/netpi/baidu-ocr-api/tree/master/examples)
+FYI [examples](https://github.com/yyssc/tims-ocr-api/tree/master/examples)
 
 ```js
 /**
 
-登陆 百度bcs控制台中心 申请access key
-https://console.bce.baidu.com/iam/#/iam/accesslist
-
+向[北京天创征腾信息科技](http://www.tchzt.com/)申请secret key
 **/
 var ak = 'your ak';
 var sk = 'your sk';
