@@ -59,7 +59,7 @@ var port = '';
 var secretKey = '1234567890';
 var ocr = require('tims-ocr-api').create(ip, port, secretKey, ak, sk);
 // 外部图片
-ocr.scan({
+ocr.upload({
   url:'http://7pun4e.com1.z0.glb.clouddn.com/test.jpg', // 支持本地路径
   type:'text',
 }).then(function (result) {
