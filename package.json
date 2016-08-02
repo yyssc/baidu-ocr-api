@@ -16,7 +16,7 @@
     "ocr",
     "tims"
   ],
-  "author": "netpi",
+  "author": "d3vin",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.4.1",
