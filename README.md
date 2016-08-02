@@ -76,6 +76,12 @@ make test
 make cov # Coverage rate
 ```
 
+### API document
+
+```
+grunt [jsdoc]
+```
+
 ### License MIT
 
 [downloads-image]: http://img.shields.io/npm/dm/tims-ocr-api.svg
