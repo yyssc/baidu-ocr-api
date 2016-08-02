@@ -18,6 +18,6 @@ if [ "$TRAVIS_REPO_SLUG" == "yyssc/tims-ocr-api" ] && [ "$TRAVIS_PULL_REQUEST" =
   git commit -m "Latest jsdoc on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to gh-pages"
   git push -fq origin gh-pages > /dev/null
 
-  echo -e "Published Javadoc to gh-pages.\n"
+  echo -e "Published jsdoc to gh-pages.\n"
   
 fi
