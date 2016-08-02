@@ -1,4 +1,4 @@
-TIMEOUT = 15000
+TIMEOUT = 30000
 test:
 	mocha -t $(TIMEOUT)
 
