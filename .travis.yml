@@ -1,7 +1,10 @@
 language: node_js
+secure: "Ky/lA272zNC0X5yxPDbI0sERoULM8BAi2Y2MfyxBP2APVgh+5JYhlGzVjFMxZah9HLH+xenqK3UrrE2uGvvfhOpWecjfJVXNagk6AuNI7M+HX7EVzhl814Dqb13KFFcNw0NdEKcwvZAHNrzwV82oq4zv4x2pmhKls+vP4M+V06z7y+Uh7mbmtg5I5z98LplQQQQo59Nt7ZptuPOGVGQCxwuldUfPSB/dHGcIbcGMdKeQsfG0VHYu85b4V3DDU9QGdp8OWmZiNO5abyZvZi9+9BhgLJIBTtH+2HZWezBYdL9f1XF3U+L+89lEvzRFNVeQG8G1QAtb3ROzXqf12Hywoe+7wjWBKSnDmMzxM1ywicgAX7KylwYSdSla+O3uBn7poWurvpa7TUh4Yh91EhVL3FCWY37ZmAm909FtsKK6M8yzFeOjVShXC/6A7QWUOhdCcxBLRMtfWEkP8z32Nxg8pYgZMnX2srI+fGjxzZYfdXJ9tlE0kaoiPA9ItfkawGRJLh8SPmnJTpSRv70ZmKndl+UJ7NnbHOx2B01FkLXMu+E/Gn4gc2MVPCDXp8xNVKXaqHaZd+8Y06+WY4/G6SzWh4VRjeGXQnAxotYTcE2+QZXPDOCgD9ygkO1bltEYit4rj3vdYHSXXFMQRH9HGb4MQPNXSAutgiHBtBEf9q+edjc="
 node_js:
   - 4.0
   - 5.0
   - stable
 after_script:
   - make coveralls
+after_success:
+  - .utility/initiate-publish.sh
