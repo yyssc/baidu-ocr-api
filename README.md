@@ -5,6 +5,7 @@
 [![Downloads][downloads-image]][npm-url]
 
 ### Advantages
+
 -  支持本地图片 外部图片(速度取决图片大小)
 -  识别简单的验证码
 -  平时相机拍摄书本的文字,基本能达到 95%
@@ -16,7 +17,7 @@
 #### 1. Global
 
 ```sh
-npm install baidu-ocr-api -g
+npm install tims-ocr-api -g
 
 ocr --help
 
@@ -25,8 +26,8 @@ ocr http://7pun4e.com1.z0.glb.clouddn.com/test.jpg
 
 # 本地图片
 ocr ./test.jpg
-
 ```
+
 ##### 效果图
 
 
@@ -39,10 +40,11 @@ ocr ./test.jpg
 
 
 #### 2. Nodejs
-```sh
-npm install baidu-ocr-api --save
 
+```sh
+npm install tims-ocr-api --save
 ```
+
 FYI [examples](https://github.com/netpi/baidu-ocr-api/tree/master/examples)
 
 ```js
@@ -54,7 +56,10 @@ https://console.bce.baidu.com/iam/#/iam/accesslist
 **/
 var ak = 'your ak';
 var sk = 'your sk';
-var ocr = require('baidu-ocr-api').create(ak,sk);
+var ip = '';
+var port = '';
+var secretKey = '1234567890';
+var ocr = require('tims-ocr-api').create(ip, port, secretKey, ak, sk);
 // 外部图片
 ocr.scan({
   url:'http://7pun4e.com1.z0.glb.clouddn.com/test.jpg', // 支持本地路径
@@ -64,24 +69,24 @@ ocr.scan({
 }).catch(function (err) {
   console.log('err', err);
 })
-
 ```
 
 ### Test
+
 ```sh
 make test
 make cov # Coverage rate
 ```
+
 ### License MIT
 
+[downloads-image]: http://img.shields.io/npm/dm/tims-ocr-api.svg
 
-[downloads-image]: http://img.shields.io/npm/dm/baidu-ocr-api.svg
+[npm-url]: https://npmjs.org/package/tims-ocr-api
+[npm-image]: http://img.shields.io/npm/v/tims-ocr-api.svg
 
-[npm-url]: https://npmjs.org/package/baidu-ocr-api
-[npm-image]: http://img.shields.io/npm/v/baidu-ocr-api.svg
+[travis-url]: https://travis-ci.org/netpi/tims-ocr-api
+[travis-image]: https://travis-ci.org/netpi/tims-ocr-api.svg?branch=master
 
-[travis-url]: https://travis-ci.org/netpi/baidu-ocr-api
-[travis-image]: https://travis-ci.org/netpi/baidu-ocr-api.svg?branch=master
-
-[coveralls-url]: https://coveralls.io/r/netpi/baidu-ocr-api
-[coveralls-image]:https://coveralls.io/repos/netpi/baidu-ocr-api/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/r/netpi/tims-ocr-api
+[coveralls-image]:https://coveralls.io/repos/netpi/tims-ocr-api/badge.svg?branch=master&service=github
