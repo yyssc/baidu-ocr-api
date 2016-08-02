@@ -85,8 +85,8 @@ make cov # Coverage rate
 [npm-url]: https://npmjs.org/package/tims-ocr-api
 [npm-image]: http://img.shields.io/npm/v/tims-ocr-api.svg
 
-[travis-url]: https://travis-ci.org/netpi/tims-ocr-api
-[travis-image]: https://travis-ci.org/netpi/tims-ocr-api.svg?branch=master
+[travis-url]: https://travis-ci.org/yyssc/tims-ocr-api
+[travis-image]: https://travis-ci.org/yyssc/tims-ocr-api.svg?branch=master
 
-[coveralls-url]: https://coveralls.io/r/netpi/tims-ocr-api
-[coveralls-image]:https://coveralls.io/repos/netpi/tims-ocr-api/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/r/yyssc/tims-ocr-api
+[coveralls-image]:https://coveralls.io/repos/yyssc/tims-ocr-api/badge.svg?branch=master&service=github
