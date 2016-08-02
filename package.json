@@ -1,7 +1,7 @@
 {
-  "name": "baidu-ocr-api",
+  "name": "tims-ocr-api",
   "version": "2.0.5",
-  "description": "OCR for baidu api",
+  "description": "OCR for TIMS-server API",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,8 +14,7 @@
   },
   "keywords": [
     "ocr",
-    "baidu",
-    "bos"
+    "tims"
   ],
   "author": "netpi",
   "license": "MIT",
@@ -35,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/netpi/baidu-ocr-api.git"
+    "url": "https://github.com/yyssc/tims-ocr-api.git"
   },
   "bugs": {
-    "url": "https://github.com/netpi/baidu-ocr-api/issues"
+    "url": "https://github.com/yyssc/tims-ocr-api/issues"
   },
-  "homepage": "https://github.com/netpi/baidu-ocr-api"
+  "homepage": "https://github.com/yyssc/tims-ocr-api"
 }
