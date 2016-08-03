@@ -69,18 +69,28 @@ ocr.upload({
 })
 ```
 
-### Test
+### Run UnitTest
 
 ```sh
 make test
 make cov # Coverage rate
 ```
 
-### API document
+Note: travis-ci.org will run this test https://travis-ci.org/yyssc/tims-ocr-api
+
+### Build API document
 
 ```
 grunt [jsdoc]
 ```
+
+### Publish API doc to github project pages
+
+The generated API document is located in `out/` dir.
+
+`.utility/push-jsdoc-to-gh-pages.sh` will called when [travis-ci](https://travis-ci.org/yyssc/tims-ocr-api) finished Unittest, to push `out/` dir to branch `gh-pages` of current repo.
+
+TODO: `out/` should generated automatically.
 
 ### License MIT
 
