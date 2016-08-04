@@ -1,6 +1,4 @@
 var should = require('should');
-var ak = 'b7d11214c8fc452db3de12028cf46daa';
-var sk = '64631fe987f4423bb0a117101bf90a45';
 
 // TIMS-server
 //const host = '124.207.70.41:8199';
@@ -13,8 +11,8 @@ const wrongSecretKey = '0987654321';
 //
 
 var wrong_sk = 'wrong_sk';
-var ocr = require('../').create(host, secretKey, ak, sk);
-var ocr2 = require('../').create(host, wrongSecretKey, ak, wrong_sk);
+var ocr = require('../').create(host, secretKey);
+var ocr2 = require('../').create(host, wrongSecretKey);
 
 describe('test/ocr.uploadfile.js', function () {
 
@@ -26,7 +24,9 @@ describe('test/ocr.uploadfile.js', function () {
         file_pk: 'img123'
       }).then(function (result) {
         result.should.be.an.instanceOf(Object);
-        result.should.have.property('data');
+        result.should.have.property('invNum');
+        result.should.have.property('tims');
+        result.tims.should.be.an.instanceOf(Object);
         done();
 
       }).catch(function (err) {
