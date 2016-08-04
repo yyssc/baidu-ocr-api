@@ -12,7 +12,7 @@ var ocr = require('../').create(ip, port, secretKey, ak, sk);
 var ocr2 = require('../').create(ip, port, wrongSecretKey, ak, wrong_sk);
 
 describe('test/ocr.test.js',function () {
-  describe('upload from cdn_url  ',function () {
+  /*describe('upload from cdn_url  ',function () {
     it('should have result',function (done) {
       ocr.upload({
         url:'http://7xod3k.com1.z0.glb.clouddn.com/mjdalykzuyefpzlgmlnkjizcfcuelxnu',
@@ -84,7 +84,7 @@ describe('test/ocr.test.js',function () {
         done()
       });
     });
-  });
+  });*/
 
   describe('ocr信息及文件查询接口', function () {
     it('should have result', function (done) {
