@@ -92,6 +92,12 @@ The generated API document is located in `out/` dir.
 
 TODO: `out/` should generated automatically.
 
+### Mock server
+
+You could use a mock test for testing.
+
+https://github.com/yyssc/mock-tims-ocr
+
 ### License MIT
 
 [downloads-image]: http://img.shields.io/npm/dm/tims-ocr-api.svg
