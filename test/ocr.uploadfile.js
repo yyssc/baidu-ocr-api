@@ -1,12 +1,16 @@
 var should = require('should');
 
-// TIMS-server
+// ## TIMS-server
 //const host = '124.207.70.41:8199';
 //const secretKey = '1234567890';
 //const wrongSecretKey = '0987654321';
-// mock TIMS-server
-const host = '101.200.74.182:3004';
-const secretKey = 'tims';
+// ## mock TIMS-server
+//const host = '101.200.74.182:3004';
+//const secretKey = 'tims';
+//const wrongSecretKey = '0987654321';
+// ## dev TIMS server 
+const host = '101.200.74.182:8088';
+const secretKey = '11111';
 const wrongSecretKey = '0987654321';
 //
 
