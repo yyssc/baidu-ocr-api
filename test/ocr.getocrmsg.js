@@ -11,8 +11,8 @@ const wrongSecretKey = '0987654321';
 //
 
 var wrong_sk = 'wrong_sk';
-var ocr = require('../').create(host, secretKey);
-var ocr2 = require('../').create(host, wrongSecretKey);
+var ocr = require('../lib/ocr.http').create(host, secretKey);
+var ocr2 = require('../lib/ocr.http').create(host, wrongSecretKey);
 
 describe('test/ocr.getocrmsg.js', function () {
 

@@ -5,18 +5,14 @@ var should = require('should');
 //const secretKey = '1234567890';
 //const wrongSecretKey = '0987654321';
 // ## mock TIMS-server
-//const host = '101.200.74.182:3004';
-//const secretKey = 'tims';
-//const wrongSecretKey = '0987654321';
-// ## dev TIMS server 
-const host = '101.200.74.182:8088';
-const secretKey = '11111';
+const host = '101.200.74.182:3004';
+const secretKey = 'tims';
 const wrongSecretKey = '0987654321';
 //
 
 var wrong_sk = 'wrong_sk';
-var ocr = require('../').create(host, secretKey);
-var ocr2 = require('../').create(host, wrongSecretKey);
+var ocr = require('../lib/ocr.http').create(host, secretKey);
+var ocr2 = require('../lib/ocr.http').create(host, wrongSecretKey);
 
 describe('test/ocr.uploadfile.js', function () {
 

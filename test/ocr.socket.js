@@ -8,7 +8,7 @@ const port = '39456';
 //
 
 var wrong_sk = 'wrong_sk';
-var ocr = require('../lib/ocr.socket').create(ip, port);
+var ocr = require('../').create(ip, port);
 
 describe('test/ocr.socket.js', function () {
 
