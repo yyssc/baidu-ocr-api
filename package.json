@@ -1,6 +1,6 @@
 {
   "name": "tims-ocr-api",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "description": "OCR for TIMS-server API",
   "main": "index.js",
   "directories": {
