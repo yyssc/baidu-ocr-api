@@ -4,6 +4,15 @@
 
 [![Downloads][downloads-image]][npm-url]
 
+### intro
+
+TIMS OCR提供两种接口：
+
+- Socket
+- HTTP（已废弃）
+
+将Socket接口封装成`OCR.scan()`这样的Node.js接口。
+
 ### Advantages
 
 -  支持本地图片 外部图片(速度取决图片大小)
