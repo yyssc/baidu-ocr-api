@@ -4,7 +4,7 @@ if [ "$TRAVIS_REPO_SLUG" == "yyssc/tims-ocr-api" ] && [ "$TRAVIS_PULL_REQUEST" =
 
   echo -e "Publishing jsdoc...\n"
 
-  cp -R "out/tims-ocr-api/2.0.5" $HOME/jsdoc-latest
+  cp -R "out/tims-ocr-api/3.0.0" $HOME/jsdoc-latest
 
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
