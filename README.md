@@ -110,6 +110,10 @@ https://github.com/yyssc/mock-tims-ocr
 
 - 增值税专用发票 https://drive.google.com/drive/folders/0B_RIK8efdyq-VmZqMUJOaTVtVm8
 
+### ocr_srv API
+
+![OCR server socket API](https://docs.google.com/drawings/d/1opIHK52EyZV57f3TJeik-IxH2VLxLnRfSMvVLGpJtJs/pub?w=960&h=720)
+
 ### License MIT
 
 [downloads-image]: http://img.shields.io/npm/dm/tims-ocr-api.svg
