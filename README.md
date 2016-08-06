@@ -13,6 +13,8 @@ TIMS OCR提供两种接口：
 
 将Socket接口封装成`OCR.scan()`这样的Node.js接口。
 
+API Document: https://yyssc.github.io/tims-ocr-api/jsdoc/
+
 ### Advantages
 
 -  支持本地图片 外部图片(速度取决图片大小)
