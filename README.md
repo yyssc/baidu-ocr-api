@@ -12,6 +12,14 @@
 -  支持 shell/nodejs 全局安装可在控制台直接运行
 -  bluebird/promise 接口操作灵活
 
+### 识别发票类型
+
+- 增值税专用发票（[票样](examples/sample.jpg)）
+
+### 依赖
+
+- 安装`ocr_srv`并启动`./start.sh`
+
 ### Install & Usage
 
 #### 1. Global
@@ -97,6 +105,10 @@ TODO: `out/` should generated automatically.
 You could use a mock test for testing.
 
 https://github.com/yyssc/mock-tims-ocr
+
+### test data
+
+- 增值税专用发票 https://drive.google.com/drive/folders/0B_RIK8efdyq-VmZqMUJOaTVtVm8
 
 ### License MIT
 

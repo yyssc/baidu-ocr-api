@@ -41,19 +41,4 @@ describe('test/ocr.uploadfile.js', function () {
     });
   });
 
-  //describe('socket', function () {
-  //  it('socket1', function (done) {
-  //    ocr.socket({
-  //    }).then(function (result) {
-  //      result.should.be.an.instanceOf(Object);
-  //      done();
-
-  //    }).catch(function (err) {
-  //      console.log(err);
-  //      err.should.be.an.instanceOf(Error);
-  //      done();
-  //    });
-  //  });
-  //});
-
 });
