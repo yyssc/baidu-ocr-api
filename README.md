@@ -47,17 +47,6 @@ ocr http://7pun4e.com1.z0.glb.clouddn.com/test.jpg
 ocr ./test.jpg
 ```
 
-##### 效果图
-
-
-
-![](https://raw.githubusercontent.com/yyssc/tims-ocr-api/master/examples/test01.jpg)
-
-
-
-   的早期世界观是建立在《魔兽争霸3：冰封王座》的基础上的，因此与现在暴雪公司的《魔兽世界》的背景设定有一定的联系，但由于版本更迭又略有不同。整个地图中地形名费伍德森林，费伍德森林是网络游戏《魔兽世界》中的游戏地图，位于卡利姆多境内的一片森林。这片由森林和草场构成的繁荣动荡的土地曾经由卡尔多雷掌管，并曾经处于半神塞纳留斯的保护下。燃烧军团的铁蹄践踏了这片土地，没有被毁灭的树木和生物则被恶魔的暴行永远的诅咒着
-
-
 #### 2. Nodejs
 
 ```sh
@@ -67,21 +56,11 @@ npm install tims-ocr-api --save
 FYI [examples](https://github.com/yyssc/tims-ocr-api/tree/master/examples)
 
 ```js
-/**
-
-向[北京天创征腾信息科技](http://www.tchzt.com/)申请secret key
-**/
-var ak = 'your ak';
-var sk = 'your sk';
-var ip = '';
-var port = '';
-var secretKey = '1234567890';
-var ocr = require('tims-ocr-api').create(ip, port, secretKey, ak, sk);
-// 外部图片
-ocr.upload({
-  url:'http://7pun4e.com1.z0.glb.clouddn.com/test.jpg', // 支持本地路径
-  type:'text',
-}).then(function (result) {
+var host = '127.0.0.1';
+var port = '39456';
+var ocr = require('tims-ocr-api').create(host, port);
+// 本地图片
+ocr.upload('/tmp/test.jpg').then(function (result) {
   return console.log(result)
 }).catch(function (err) {
   console.log('err', err);
