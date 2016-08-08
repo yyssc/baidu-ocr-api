@@ -47,6 +47,10 @@ ocr http://7pun4e.com1.z0.glb.clouddn.com/test.jpg
 ocr ./test.jpg
 ```
 
+##### OCR识别输入和输出
+
+![ocr example](examples/ocrdocument.png)
+
 #### 2. Nodejs
 
 ```sh
