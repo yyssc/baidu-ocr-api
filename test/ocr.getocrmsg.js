@@ -14,7 +14,7 @@ var wrong_sk = 'wrong_sk';
 var ocr = require('../lib/ocr.http').create(host, secretKey);
 var ocr2 = require('../lib/ocr.http').create(host, wrongSecretKey);
 
-describe('test/ocr.getocrmsg.js', function () {
+describe.skip('test/ocr.getocrmsg.js', function () {
 
   describe('ocr信息及文件查询接口', function () {
     it('应该返回指定id的图片对应的JSON数据', function (done) {

@@ -14,7 +14,7 @@ var wrong_sk = 'wrong_sk';
 var ocr = require('../lib/ocr.http').create(host, secretKey);
 var ocr2 = require('../lib/ocr.http').create(host, wrongSecretKey);
 
-describe('test/ocr.uploadfile.js', function () {
+describe.skip('test/ocr.uploadfile.js', function () {
 
   describe('图像上传接口', function () {
     it('应该返回相应JSON数据', function (done) {

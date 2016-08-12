@@ -18,8 +18,7 @@ API Document: https://yyssc.github.io/tims-ocr-api/jsdoc/
 ### Advantages
 
 -  支持本地图片 外部图片(速度取决图片大小)
--  识别简单的验证码
--  平时相机拍摄书本的文字,基本能达到 95%
+-  用扫描仪扫描出的发票,识别率基本能达到 95%
 -  支持 shell/nodejs 全局安装可在控制台直接运行
 -  bluebird/promise 接口操作灵活
 

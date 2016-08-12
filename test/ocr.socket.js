@@ -23,9 +23,6 @@ describe('test/ocr.socket.js', function () {
 
       ocr.scan(filePath).then(function (result) {
         result.should.be.an.instanceOf(Object);
-        console.log(1)
-        console.log(result);
-        console.log(2)
         result.should.have.property('fileId');
         result.should.have.property('message');
         result.should.have.property('result');
