@@ -1,3 +1,7 @@
+/*jslint node: true */
+
+'use strict;'
+
 const should = require('should');
 const fs = require('fs');
 const util = require('util');
@@ -7,32 +11,59 @@ const ip = '127.0.0.1';
 const port = '39456';
 //
 
-var wrong_sk = 'wrong_sk';
-var ocr = require('../').create(ip, port);
+const filePath = 'test/Image_00001.jpg';
+const wrong_sk = 'wrong_sk';
+const ocr = require('../').create(ip, port);
 
-describe('test/ocr.socket.js', function () {
-
-  describe('直接调用ocr_srv的socket接口', function () {
-    it('socket1', function (done) {
-      var filePath = 'test/Image_00001.jpg';
+describe('OCR', function () {
+  describe('#scan()', function () {
+    before(function () {
       if (!fs.existsSync(filePath)) {
         console.log(util.format("\x1b[31mFile %s not found, please download it from https://drive.google.com/drive/folders/0B_RIK8efdyq-VmZqMUJOaTVtVm8", filePath));
-        done();
+        this.skip();
         return;
       }
+    });
 
-      ocr.scan(filePath).then(function (result) {
-        result.should.be.an.instanceOf(Object);
-        result.should.have.property('fileId');
-        result.should.have.property('message');
-        result.should.have.property('result');
-        done();
-      }).catch(function (err) {
-        console.log(err);
-        err.should.be.an.instanceOf(Error);
-        done();
+    context('when processing a local image', function () {
+      it('should have some properties in result', function (done) {
+        ocr.scan(filePath).then(function (result) {
+          const ocrObj = result.data;
+          const ocrOriginalStr = result.old;
+
+          ocrObj.should.be.an.instanceOf(Object);
+          ocrObj.should.have.property('fileId');
+          ocrObj.should.have.property('message');
+          ocrObj.should.have.property('result');
+          ocrOriginalStr.should.be.an.instanceOf(String);
+
+          done();
+        }).catch(function (err) {
+          console.log(err);
+          err.should.be.an.instanceOf(Error);
+          done();
+        });
+      });
+    });
+
+    context('when processing a local image with post processing', function () {
+      it('should have some properties in result', function (done) {
+        ocr.scan(filePath, /*enablePostProcessing*/true).then(function (result) {
+          const ocrObj = result.data;
+          const ocrOriginalStr = result.old;
+          ocrObj.should.be.an.instanceOf(Object);
+          ocrObj.should.have.property('fileId');
+          ocrObj.should.have.property('message');
+          ocrObj.should.have.property('result');
+          ocrObj.postprocess.should.equal(true);
+          ocrOriginalStr.should.be.an.instanceOf(String);
+          done();
+        }).catch(function (err) {
+          console.log(err);
+          err.should.be.an.instanceOf(Error);
+          done();
+        });
       });
     });
   });
-
 });

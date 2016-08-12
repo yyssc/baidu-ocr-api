@@ -74,6 +74,8 @@ ocr.upload('/tmp/test.jpg').then(function (result) {
 
 ```sh
 make test
+DEBUG=* make test # show debug log
+mocha --ui tdd -g 'utils' # only test 'utils', and use TDD interface
 make cov # Coverage rate
 ```
 
