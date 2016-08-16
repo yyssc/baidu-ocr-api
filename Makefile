@@ -1,6 +1,6 @@
 TIMEOUT = 30000
 test:
-	mocha -t $(TIMEOUT)
+	mocha -t $(TIMEOUT) --ui tdd
 
 cov test-cov:
 	./node_modules/.bin/istanbul cover _mocha -- -t $(TIMEOUT)
