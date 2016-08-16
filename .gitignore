@@ -31,3 +31,6 @@ node_modules
 
 # VIM
 .*.swp
+
+# tims ocr test data
+test/Image_*.jpg
