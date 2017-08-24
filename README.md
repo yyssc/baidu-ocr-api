@@ -103,7 +103,7 @@ https://github.com/yyssc/mock-tims-ocr
 
 ### test data
 
-- 增值税专用发票 https://drive.google.com/drive/folders/0B_RIK8efdyq-VmZqMUJOaTVtVm8
+- 增值税专用发票 https://drive.google.com/drive/folders/0B_RIK8efdyq-VmZqMUJOaTVtVm8 (chenyangf@yonyou.com)
 
 ### ocr_srv API
 
